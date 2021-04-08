@@ -1,0 +1,26 @@
+.feed__postLikes {
+  cursor: pointer;
+  color: #c1c1c1;
+  margin-top: 20px;
+  border-radius: 50%;
+  height: fit-content;
+  width: fit-content;
+  display: grid;
+  place-items: center;
+  transition: all 0.2s ease;
+}
+
+.feed__postLikes:hover {
+  background-color: rgba(255, 0, 0, 0.171);
+  color: rgb(235, 64, 64);
+}
+
+.feed__postbody {
+  max-width: 90%;
+  margin-bottom: 30px;
+}
+
+.feed__postsLikeCount {
+  font-size: 0.9rem;
+  color: #585858;
+}

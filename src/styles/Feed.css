@@ -1,0 +1,91 @@
+.feed {
+  flex: 0.5;
+}
+
+.feed__createPost {
+  margin-bottom: 3%;
+  background-color: #fa3266;
+  transition: all 0.5s ease;
+  box-shadow: 4px 4px 5px 0px rgba(250, 50, 102, 0.75);
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(250, 50, 102, 0.75);
+  -moz-box-shadow: 4px 4px 5px 0px rgba(250, 50, 102, 0.75);
+}
+
+.feed__createPost {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  padding: 3%;
+}
+
+.feed__createPost .MuiAvatar-root {
+  margin-right: 3%;
+}
+.feed__startPost {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  background-color: #fffdfd;
+  height: 45px;
+  padding-left: 4%;
+  color: rgb(100, 99, 99);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.feed__startPost:hover {
+  background-color: #f2f2f2;
+  color: rgba(250, 50, 102, 1);
+}
+
+.feed__posts {
+  overflow-y: auto;
+}
+
+.feed__post {
+  margin: 3%;
+  background-color: #f7f7f7;
+  padding: 5%;
+}
+
+.feed__postheader {
+  display: flex;
+  align-items: center;
+}
+
+.feed__postheader > .MuiAvatar-root {
+  margin-right: 3%;
+}
+
+.feed__postheader > div {
+  font-size: 1.1rem;
+}
+
+.feed__postbody {
+  margin-top: 5%;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .feed {
+    flex: 1 !important;
+    width: 100% !important;
+  }
+
+  .feed__createPost {
+    width: 100%;
+  }
+  .feed__posts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: visible;
+  }
+
+  .feed__post {
+    width: 100%;
+  }
+}

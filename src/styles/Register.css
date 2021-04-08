@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.register {
+  background-color: transparent;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.register__left {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 10vw;
+}
+
+.register__left img {
+  height: 60vh;
+  max-height: 1000px;
+}
+
+.register__right {
+  position: relative;
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.register__right:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+  width: 110%;
+  background-color: rgba(238, 238, 238, 0.5);
+  transform: translateX(-10%) skewX(-10deg);
+}
+
+.register__heading {
+  color: #1b1464;
+  text-shadow: 4px 4px 10px rgba(125, 62, 198, 0.5);
+  font-family: "Bebas Neue", cursive;
+}
+
+.register__heading div:nth-child(1) {
+  margin-bottom: 0px;
+  font-weight: 900;
+  font-size: 4rem;
+  letter-spacing: 0.1mm;
+  line-height: 0.9em;
+  font-family: "Bebas Neue", cursive;
+}
+
+.register__heading div:nth-child(2) {
+  font-weight: 600;
+  font-size: 3.5rem;
+  letter-spacing: 0.1mm;
+  font-family: "Bebas Neue", cursive;
+}
+
+.register__buttons {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 17%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  width: 60%;
+  margin-bottom: 30px;
+  height: 50px;
+  border: 2px solid rgb(235, 234, 234);
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 100;
+  outline: none;
+}
+
+form input:focus {
+  border: 2px solid #fa3266;
+}
+
+form button {
+  width: 25%;
+  height: 40px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+}
+
+.redirect {
+  color: grey;
+}
+
+.redirect div {
+  cursor: pointer;
+  color: rgb(13, 141, 245);
+}
+
+@media screen and (max-width: 1000px) {
+  .register__left {
+    position: absolute;
+  }
+  .register__left img {
+    position: absolute;
+    width: 30%;
+    top: 12%;
+    right: 22%;
+    transform: translate(-50%, -50%);
+  }
+
+  .register__right {
+    width: 100%;
+    transform: translateX(10%);
+  }
+
+  form input {
+    width: 80%;
+  }
+}

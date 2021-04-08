@@ -1,0 +1,9 @@
+.login .login__heading {
+  font-weight: 900;
+  font-size: 2rem;
+  padding-bottom: 30px;
+  color: #1b1464;
+  text-shadow: 4px 4px 10px rgba(125, 62, 198, 0.5);
+  letter-spacing: 0.1mm;
+  font-family: "Bebas Neue", cursive;
+}
